@@ -10,3 +10,7 @@ def add3(a, b, c=0):
 print(add3(1, 2))
 print(add3(10, 20))
 print(add3(10, 20, 30))
+
+
+somme = add3(20, 30)
+print(somme)
