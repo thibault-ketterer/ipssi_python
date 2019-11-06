@@ -1,1 +1,1 @@
-some python 3 example an exercices
+some python 3 examples and exercices
