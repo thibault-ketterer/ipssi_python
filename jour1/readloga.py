@@ -25,8 +25,15 @@ with open(apath) as fd:
         datetime_object = datetime.strptime(date[1:],
                                             '%d/%b/%Y:%H:%M:%S')
         print(datetime_object)
-        print(uagenttrash)
-        break
+        # print(uagenttrash)
+        # print(uagenttrash.split('"'))
+        # print(uagenttrash.split('"')[1])
+        uagent = uagenttrash.split('"')[1]
+        timing = uagenttrash.split('"')[2]
+        print(uagent)
+        print(timing.split())
+        reqtime = timing.split()[0]
+        print(reqtime)
 
 # 63.143.42.252 - - [29/Oct/2019:06:25:25 +0100] "HEAD /login HTTP/1.1" 200
 # 0 "https://riskstarter.arengibox.com/login"
