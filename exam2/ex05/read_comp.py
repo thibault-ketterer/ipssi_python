@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 for line in open("docker-compose.yml"):
     if "image" in line:
