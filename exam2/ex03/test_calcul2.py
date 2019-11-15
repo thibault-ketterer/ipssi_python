@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 
 from calcul import division
 from calcul import multiplication
