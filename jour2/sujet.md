@@ -5,4 +5,3 @@
 * ajouter une fonction `soustraction` au module `calcul` qui renvoit la soustraction
 
 * vous devez avoir 2 fichiers
-
