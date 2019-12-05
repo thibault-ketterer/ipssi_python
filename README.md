@@ -221,6 +221,7 @@ il devra valider que noel fonctionne avec les dates 2018-8-18 et 2020-11-1
 
 * de tester votre code de sla
 vous le nommerez `test_sla.py` via la fonction show_sla
+
 il devra tester la sla 99.5, 99.8 et 99.99
 
 ## ansible nginx
@@ -228,7 +229,7 @@ faites un role ansible
 * que vous appelerez `nginx.yml`
 * qui installe le package nginx
 * qui copie un fichier de config nginx valide de votre choix dans /etc/nginx.conf
-* le fichier nginx devra contenir la ligne "add_header X-myname <le-nom-de-la-machine>" dans le bloc `http {`
+* le fichier nginx devra contenir la ligne "add_header X-myname le-nom-de-la-machine" dans le bloc `http {`
 * qui verifie que la config nginx est correcte
 * qui reload le demon nginx (cf nginx -h)
 *
