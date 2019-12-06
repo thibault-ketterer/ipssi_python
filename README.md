@@ -12,6 +12,7 @@ exam3/test_tree.py
 exam3/test_noel.py
 exam3/test_sla.py
 exam3/nginx.yml
+exam3/sapin_noel.py
 exam3/valide_clean.py ou exam3/valide_clean.sh
 ```
 si vous souhaitez changer de git pour faire votre rendu. indiquez le moi par slack avant vendredi soir.
@@ -224,6 +225,9 @@ vous le nommerez `test_sla.py` via la fonction show_sla
 
 il devra tester la sla 99.5, 99.8 et 99.99
 
+une fois que vous lancer `pytest -v` dans votre répertoire exam3 il doit vous indiquer que tout est bon comme vu en cours
+
+
 ## ansible nginx
 faites un role ansible
 * que vous appelerez `nginx.yml`
@@ -232,9 +236,69 @@ faites un role ansible
 * le fichier nginx devra contenir la ligne "add_header X-myname le-nom-de-la-machine" dans le bloc `http {`
 * qui verifie que la config nginx est correcte
 * qui reload le demon nginx (cf nginx -h)
-*
+
 * ansible remplacera bien sur le-nom-de-la-machine par la valeur de ansible_hostname
 
+## sapin de noel
+faites une copie de votre sapin et modifiez le pour qu'il affiche aussi des boules de noel au hasard (fonction random)
+* il affiche un nombre de boules au hasard
+* les boules sont réparties au hasard sur les branches
+* si on lance 2 fois le script de suite les boules vont donc changer de place
+
+comme ceci par exemple `sapin_noel.py`:
+
+```
+#tketterer@MLA019902 ~ _$ python sapin_noel.py 30
+                x
+               xxx
+              xxxxx
+             xxxOxxx
+            xxxxxOxxx
+           xxxxxxxxxxx
+          xxxxxxOxxxxxx
+         xxOxxxxxxxxxxxx
+        xxxxxxxxxxxxxxxxx
+       xxxxxxxxOxxxxxxxOxx
+      xxxOxxxxxxxxOxxxxxxxx
+     xxxxxxxxxxxxxxxxxxxOxxx
+    xxxxxxxxxxOxxxxxxxxxxxxxx
+   xxxxOxxxxxxxxxxxxxxxxxxxxxx
+  xxxxxxxxxxxxxOxxxxxxxxxxxxxxx
+ xxxxOxxxxxxxOxxxxxxxxOxxxxxOxxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+
+
+#tketterer@MLA019902 ~ _$ python sapin_noel.py 30
+                O
+               xxx
+              xOxxx
+             xxxxxxx
+            xxxxxxxxx
+           xxxxOxxxxxx
+          xxxxxxxxxxOxx
+         xxxxxOxxxxxxxxx
+        xxxxxxxxxxxxxxxxx
+       xxxxxxxxOxxxxxxxxxx
+      xxxxxxOxxxxxxxxOxxxxx
+     xxxxOxxxxxxxxxxxxxxxxxx
+    xxxOxxxxxxxxxxxxxxxxxxxxx
+   xxxxxxxxxxxxxxxxxxxxxxxxxxx
+  xxOxxxxxxxxxxOxxxxxxxxxxOxxxx
+ xxOxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+               xxx
+```
 
 ## bonus
 Faites un script de test pour le script clean_downloads.py dans le language de votre choix.
