@@ -23,7 +23,7 @@ qui prend en argument un nombre et affiche un sapin comme celui-ci
 * l'argument est la largeur du sapin mais doit etre impaire et arrondi au-dessus
 * le tronc fait une largeur de 1 si la largeur est <= 3
 * le tronc fait une largeur de 3 si la largeur du sapin est > 3
-* la hauteur du tain le tronc fait la largeur du sapin divisé par 5 arrondi en dessous mais de minimum 1
+* la hauteur du tronc fait la largeur du sapin divisé par 5 arrondi en dessous mais de minimum 1
 
 attention ce script devra contenir ce code pour gérer l'argument
 ```
