@@ -15,7 +15,7 @@ exam3/nginx.yml
 exam3/sapin_noel.py
 exam3/valide_clean.py ou exam3/valide_clean.sh
 ```
-si vous souhaitez changer de git pour faire votre rendu. indiquez le moi par slack avant vendredi soir.
+si vous souhaitez changer de git pour faire votre rendu. indiquez le moi par slack en message privé avant vendredi soir.
 
 ## sapin
 faites un script `tree.py`
@@ -311,5 +311,5 @@ il doit gérer tous les cas
 - créer de vieux fichiers
 - des fichiers > 50MB
 - des fichiers < 50MB
-- lancer le script clean_downloads.py
+- lancer le script clean_downloads.py et entrer "y" au clavier pour la suppression
 - vérifier que les fichiers ont été supprimés ou déplacés
