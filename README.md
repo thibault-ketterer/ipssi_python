@@ -194,6 +194,8 @@ faites un script `sla.py` qui calcule le temps en heure et minute d'indisponibil
 Vous pouvez vous baser sur ce site pour valider votre script
 https://uptime.is/
 
+attention une année dure 365.25 jours
+
 Exemple
 ```
 $ sla.py 99.9
