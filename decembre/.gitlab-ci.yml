@@ -1,0 +1,32 @@
+
+# image: "python:3.7"
+#
+# before_script:
+#   - python --version
+#   - pip install -r requirements.txt
+stages:
+  - Static Analysis
+  - Test
+  - deploy
+flake8:
+  stage: Static Analysis
+  image: "python:3.7"
+  script:
+  - python --version
+  - pip install -r requirements.txt
+  - flake8 --max-line-length=120 *.py
+pytest:
+  stage: Test
+  image: "python:3.7"
+  script:
+  - python --version
+  - pip install -r requirements.txt
+  - pytest
+staging:
+  stage: deploy
+  image : ruby:2.2
+  script:
+  - apt-get update -qy
+  - apt-get install -yqq ruby ruby-dev nodejs --silent
+  - gem install dpl
+  - dpl --provider=heroku --app=ipssitest --api-key=$HEROKU_STAGING_API_KEY
